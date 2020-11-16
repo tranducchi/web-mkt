@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('webFonts/BebasNeue-Regular/font.woff2') format('woff2'), url('webFonts/BebasNeue-Regular/font.woff') format('woff');
+}
+  
