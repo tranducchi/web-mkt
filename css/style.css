@@ -129,7 +129,7 @@ header#header{
     top: 0;
     height: 100%;
     z-index:9999;
-    width: 300px;
+    width: 541px;
     background-color: black;
     margin-left:300px;
     padding-top: 80px;
@@ -189,11 +189,56 @@ header#header{
     color: white;
 }
 .logo a h3{
-    padding-top: 21px;
-    padding-left:10px;
+    padding-top:30px;
+    padding-left:4px;
     opacity: 0;
     transition: 0.6s;
 }
 .logo a:hover h3{
     opacity: 1;
 }
+.vertical-line{
+    width: 1px;
+    background-color: white; 
+    height: 70px; 
+    margin-left: 4px;
+  }
+
+a.on_top { opacity:0.6; display: none;}
+a.on_top:hover{
+background-color: #007bb6;
+color: #fff;
+border: 1px solid #007bb6;
+opacity:1;
+}
+a.on_top i{ font-size: 20px;}
+a.on_top {
+border-radius: 6px;
+background-color: #333333;
+padding: 10px 20px;
+white-space: nowrap; color: #fff;
+position: fixed;
+bottom: 75px;
+right: 30px;
+height: 44px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
