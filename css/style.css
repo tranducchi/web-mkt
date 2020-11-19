@@ -2,7 +2,12 @@
     padding: 0;
     margin: 0;
 }
-
+img, media {
+    max-width: 100%;
+}
+body,html{
+    height:100%;
+}
 .logo img {
     width: 34px;
     padding-top: 7px;
@@ -87,7 +92,7 @@ header#header{
     bottom: 31px!important;
 }
 .carousel-caption.d-none.d-md-block{
-    bottom: 317px!important;
+    top: 29%;
 }
 .carousel-indicators li{
     width: 15px!important;
@@ -98,7 +103,7 @@ header#header{
 .scroll-to{
     position: absolute;
     right: -62px;
-    bottom: 331px;
+    top: 44%;
     width: 200px;
     height: 30px;
     color: white;
@@ -124,8 +129,7 @@ header#header{
 
 .tab-menu{
     position: fixed;
-    opacity: 0;
-    right: -300px;
+    right: -175%;
     top: 0;
     height: 100%;
     z-index:9999;
@@ -170,19 +174,13 @@ header#header{
     transition: 0.2s;
 }
 /* Css our story */
-#our-story{
-    background-image: url('../img/p2.png');
-    background-size: cover;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
+
 .img-story {
     height: 250px;
     width: 100%;
     border: 2px solid white;
     overflow: hidden;
-    margin-top: 214px;
+    margin-top: 24%;
 }
 .logo a{
     text-decoration: none;
@@ -241,4 +239,29 @@ height: 44px;
   
   #myBtn:hover {
     background-color: #555;
+  }
+  #our-story{
+      position: relative;
+     
+  }
+  .our-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  #about-us{
+      position: relative;
+  }
+  .about-bg{
+      top: 0;
+      left: 0;
+      width: 100%;
+  }
+  .container.story-content{
+      position: absolute;
+      right: 4%;
+      width: 50%;
+      top: 14%;
+      z-index: 2;
   }
