@@ -3,6 +3,23 @@
     margin: 0;
 }
 
+ul#tabs-nav li {padding:20px;list-style: none;}
+
+ul#tabs-nav li a {
+    color: white;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+ul#tabs-nav li a.atab::before {content: "";width: 40px;height: 40px;background: white;position: absolute;left: -3%;margin-top: 2px;border-radius: 50%;}
+
+.carousel-caption .content-slide {
+    width: 90%;
+}
+body{
+    font-family: Montserrat-Light!important;
+    letter-spacing: 0.4px;
+}
 .select-section input[type="radio"] {
     margin-right: 20px;
 }
@@ -86,13 +103,14 @@ label.form-check-label {
 
 .about-left h3 {
     font-size: 40px;
+    font-family:Montserrat-Bold;
 }
 
 #about-us .section-one,.section-two,.section-three,.section-four {
     position: absolute;
-    top: 23%;
+    top: 27%;
     width: 100%;
-    left: 9%;
+    left: 0%;
     color: white;
 }
 img, media {
@@ -145,7 +163,8 @@ h4{
     margin-top: 30px;
 }
 .content-slide h2{
-    font-size: 35px!important;
+    font-size: 59px!important;
+    font-family: Montserrat-Bold;
 }
 @font-face {
     font-family: Montserrat-Light;
@@ -186,6 +205,7 @@ header#header{
 }
 .carousel-caption.d-none.d-md-block{
     top: 29%;
+    left: 9%;
 }
 .carousel-indicators li{
     width: 15px!important;
@@ -284,6 +304,7 @@ header#header{
     padding-left:4px;
     opacity: 0;
     transition: 0.6s;
+    font-family: Montserrat-Bold!important
 }
 .logo a:hover h3{
     opacity: 1;
