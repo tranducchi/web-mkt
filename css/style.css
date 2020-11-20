@@ -2,6 +2,31 @@
     padding: 0;
     margin: 0;
 }
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: none;
+}
+.p1 {
+    margin-top: 41%;
+}
+
+.selection {
+    margin-top: 23%;
+}
+
+.arrow li {
+    padding: 0!important;
+}
 
 ul#tabs-nav li {padding:20px;list-style: none;}
 
@@ -108,7 +133,7 @@ label.form-check-label {
 
 #about-us .section-one,.section-two,.section-three,.section-four {
     position: absolute;
-    top: 27%;
+    top: 10%;
     width: 100%;
     left: 0%;
     color: white;
