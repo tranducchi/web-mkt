@@ -3,6 +3,25 @@
     margin: 0;
 }
 
+.select-section input[type="radio"] {
+    margin-right: 20px;
+}
+
+ul.nav.select-section.d-flex.flex-column li {
+    padding: 20px;
+}
+
+ul.nav.select-section.d-flex.flex-column a {
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+.image-upload.d-flex.justify-content-start p {
+    padding-top: 15px;
+    font-size: 18px;
+}
+
 .input-left .fill-input {
     border: 1px solid white;
 }
@@ -70,11 +89,11 @@ label.form-check-label {
     font-size: 40px;
 }
 
-#about-us .section-one,.section-two {
+#about-us .section-one,.section-two,.section-three,.section-four {
     position: absolute;
     top: 23%;
-    left: 0;
     width: 100%;
+    left: 9%;
     color: white;
 }
 img, media {
@@ -348,4 +367,10 @@ height: 44px;
     border-radius: 50%; 
     background: DodgerBlue;
     cursor: pointer;
+  }
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
   }
