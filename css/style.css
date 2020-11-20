@@ -394,3 +394,46 @@ height: 44px;
     border: 1px solid #ccc;
     border-top: none;
   }
+  /* code page 5 client */
+  #clients{
+    position: relative;
+  }
+  .clients-content{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    left: 0%;
+    color: white;
+  }
+  .client-text{
+    font-size: 31px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .clients-content p{
+    
+    padding-top: 4px;
+    font-weight: bold;
+  }
+.clients-content img{
+    padding-bottom: 4px;
+    width: 104px;
+    height: 120px;
+}
+.clients-content img.client-img{
+    width: 50px;
+    height: 40px;
+    margin-left: 161px;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 104px;
+    height: 120px;
+}
+p.slide img{
+    width: 18px;
+    height: 30px;
+}
+p.slide img:first{
+    margin-left: 161px;
+}

@@ -41,5 +41,22 @@ $('#tabs-nav li').click(function(){
   return false;
 });
 
-    
+$('.infor').click(function(){
+  location.href = 'content.html';
+});
+$('.content-two').hide();
+$('.on-click').click(function(){
+  $('.content-one').show();
+  $('.content-two').hide();
+  
+});
+$('.close').click(function(){
+  $('.content-one').hide();
+  $('.content-two').show();
+});
+});
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
 });
