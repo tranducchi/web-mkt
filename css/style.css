@@ -2,6 +2,14 @@
     padding: 0;
     margin: 0;
 }
+
+.page-number {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    color: white;
+    font-weight: bold;
+}
 textarea:focus, 
 textarea.form-control:focus, 
 input.form-control:focus, 
