@@ -486,6 +486,53 @@ height: 44px;
   .lang a:hover{
     color: gold;
   }
+/* page 3 human of the door */  
+  #human-of-the-door{
+    position: relative;
+}
+#p3-content{
+    position: absolute;
+    top: 62%;
+    left: 39%;
+    width: 35%;
+}
+.btn.btn-outline-light.btn-send{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 21px;
+}
+.item.p3-img{
+  width: 80%;
+  height: 100%;
+}
+#p3-img-size{
+    width: 100%;
+    height: 100%;
+}
+.owl-nav{
+  width: 118%;
+  position: absolute;
+  top: 39%;
+  right: -8%;
+  z-index: 1;
+}
+.owl-prev{
+  size: 5px;
+  float: left;
+}
+.owl-prev:hover{
+    transform: scale(1.2);
+}
+.owl-next{
+  float: right;
+} 
+.owl-next:hover{
+    transform: scale(1.2);
+}
+.owl-stage-outer{
+  z-index: 2;
+}
   /* code page 5 client */
   #clients{
     position: relative;
