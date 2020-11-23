@@ -17,20 +17,20 @@
 <body>
     <div id="fullpage">
       <!-- Header -->
-      <div class="section " id="section0">
+      <div class="section fp-auto-height" id="section0">
         <header id="header">
-          <!-- Menu -->
+          <!-- Menu destop -->
           <div class="menu fixed-top" id="menu">
             <div class="container d-flex justify-content-between">
-              <div class="logo pt-2 pl-3">
+              <div class="logo pt-2">
                 <a href="#" class="d-flex justify-content-start">
-                  <img src="img/logo.png" alt="">
+                  <img src="img/logo.png" class="img-fluid" alt="">
                   <div class="vertical-line"></div>
                   <h3>The Door</h3>
                 </a>
               </div>
               <div class="left-menu d-flex justify-content-between">
-                <div class="search">
+                <div class="search d-none d-sm-block">
                   <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i></button>
@@ -48,6 +48,8 @@
               </div>
             </div>
           </div>
+          <!-- Menu mobile -->
+       
           <!-- End menu -->
           <div id="carouselExampleIndicators" class="carousel slide">
             <ol class="carousel-indicators">
@@ -58,20 +60,23 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/home-1.png" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                  <div class="col-lg-8">
-                    <div class="content-slide text-left">
-                      <h2 class="pb-3">TOUCH THE DOOR, OPEN CREATIVE</h2>
-                      <p>Inspired by the doors in life, The Door is the owner of the magical door that brings you to creative lands. Besides, there is the motto "Creation or no door". The young team is constantly improving to continue collecting creative cultural texts in the world ...</p>
-                      <button class="btn btn-secondary">Read More<i class="fa fa-angle-double-right pl-1" aria-hidden="true"></i></button>
+                <div class="carousel-caption">
+                  <div class="row">
+                    <div class="col-12 col-md-8">
+                      <div class="content-slide text-left">
+                        <h2 class="pb-3">TOUCH THE DOOR, OPEN CREATIVE</h2>
+                        <p>Inspired by the doors in life, The Door is the owner of the magical door that brings you to creative lands. Besides, there is the motto "Creation or no door". The young team is constantly improving to continue collecting creative cultural texts in the world ...</p>
+                        <button class="btn btn-secondary d-none d-sm-block">Read More<i class="fa fa-angle-double-right pl-1" aria-hidden="true"></i></button>
+                      </div>
                     </div>
                   </div>
+                  <!-- end row -->
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="https://via.placeholder.com/1305x762.png?text=put+here" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                  <div class="col-lg-8 text-justify">
+                <div class="carousel-caption">
+                  <div class="col-12 col-md-8 text-justify">
                     <div class="content-slide">
                       <h2 class="pb-3">TOUCH THE DOOR, OPEN CREATIVE</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a hic voluptas magnam inventore nihil excepturi quisquam dolor ipsa, ullam recusandae repudiandae doloremque tempore ratione dolores unde numquam quia neque.</p>
@@ -80,17 +85,18 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide">
+                <img class="d-block w-100" src="https://via.placeholder.com/1305x762.png?text=put+here" alt="Third slide">
               </div>
             </div>
           </div>
           <!-- navigate -->
-          <div class="scroll-to d-flex justify-content-between">
-            <span>HOME</span>
-            <div class="group-arrow">
-              <a href="#our-story" class="fa fa-long-arrow-right" aria-hidden="true"></a>
+          <div class="scroll-div d-none d-sm-block">
+            <div class="scroll-to d-flex justify-content-between">
+              <span>HOME</span>
+              <div class="group-arrow">
+                <a href="#our-story" class="fa fa-long-arrow-right" aria-hidden="true"></a>
+              </div>
             </div>
-            
           </div>
           <div class="tab-menu" id="list-menutab">
             <p class="text-center">
@@ -111,24 +117,27 @@
         </header>
       </div>
       <!-- End header -->
-      <div class="section " id="section1">
+      <div class="section fp-auto-height" id="section1">
         <div id="our-story">
           <img class="about-bg" src="img/home-2.png" alt="">
           <div class="container story-content">
               <div class="img-story">
                 <img src="img/story-1.jpg" class="img-fluid" alt="">
               </div>
-              <p class="pt-5 text-white">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi explicabo dignissimos perspiciatis magnam aspernatur consequatur repudiandae nulla labore quibusdam rerum impedit tempora, libero quasi eligendi molestiae deserunt eaque atque soluta.
+              <p class="mt-5 text-white">
+                We are not a traditional ad agency network —we are a radically open creative collective
+                The overflow property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified
+                content or to add scrollbars when an element's content is too big to fit in a specified
               </p>
           </div>
-          <!-- Navigate -->
-          <div class="scroll-to d-flex justify-content-between">
-            
-            <span>OUR STORY</span>
-            <div class="group-arrow">
-              <a href="#header" class="fa fa-long-arrow-left pr-2" aria-hidden="true"></a>
-              <a href="#our-story" class="fa fa-long-arrow-right" aria-hidden="true"></a>
+           <!-- navigate -->
+           <div class="scroll-div d-none d-sm-block">
+            <div class="scroll-to d-flex justify-content-between">
+              <span>HOME</span>
+              <div class="group-arrow">
+                <a href="#header" class="fa fa-long-arrow-left" aria-hidden="true"></a>
+                <a href="#our-story" class="fa fa-long-arrow-right" aria-hidden="true"></a>
+              </div>
             </div>
           </div>
           <div class="page-number">
@@ -137,7 +146,7 @@
         </div>
       </div>
       <!-- clients -->
-      <div class="section " id="section1">
+      <div class="section fp-auto-height" id="section2">
         <div id="clients">
           <img src="img/home-6.png" alt="" class="about-bg">
           <div class="clients-content">
@@ -227,13 +236,12 @@
                   <p>SOUTH AFRICA</p>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
       <!-- About Us -->
-      <div class="section " id="section1">
+      <div class="section fp-auto-height" id="section">
         <div id="about-us">
           <img src="img/home-6.png" alt="" class="about-bg">
           <div class="tabs-content">
@@ -369,15 +377,13 @@
                           <!-- End list option -->
                           <div class="row">
                             <div class="col-lg-4">
-                              <h4>WHAT'S YOUR BUDGET?</h4>
-                            
+                              <h4 class="pt-2">WHAT'S YOUR BUDGET?</h4>                  
                             </div>
                             <div class="col-lg-8">
                               <div class="slidecontainer">
                                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                                 <p>Value :  <span id="demo"></span></p>
                               </div>
-
                             </div>
                             </div>
                           </div>
@@ -472,7 +478,7 @@
                             <!-- End row -->
                           </div>
                           <!-- End list option -->
-                          <div class="image-upload d-flex justify-content-start">
+                          <div class="image-upload d-flex justify-content-start pt-3">
                             <label for="file-input" class="pr-3">
                               <img src="img/upload-icon.png" alt="">
                             </label>
@@ -531,11 +537,13 @@
                 </div>
             </div>
           </div>
-          <!-- Navigate -->
-          <div class="scroll-to d-flex justify-content-between">
-            <span>OUR STORY</span>
-            <div class="group-arrow">
-              <a href="#our-story" class="fa fa-long-arrow-left pr-2" aria-hidden="true"></a>
+          <!-- navigate -->
+           <div class="scroll-div d-none d-sm-block">
+            <div class="scroll-to d-flex justify-content-between">
+              <span>HOME</span>
+              <div class="group-arrow">
+                <a href="#our-story" class="fa fa-long-arrow-right" aria-hidden="true"></a>
+              </div>
             </div>
           </div>
           <div class="page-number">
@@ -555,9 +563,8 @@
     <script src="js/fullpage.js"></script>
     <script type="text/javascript">
       var myFullpage = new fullpage('#fullpage', {
-         
           scrollBar: true
       });
-  </script>
+    </script>
 </body>
 </html>

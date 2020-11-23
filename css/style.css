@@ -14,6 +14,7 @@
     left: 10%;
     color: white;
     font-weight: bold;
+    z-index: 1;
 }
 textarea:focus, 
 textarea.form-control:focus, 
@@ -51,12 +52,27 @@ ul#tabs-nav li a {
 
 ul#tabs-nav li a.atab::before {content: "";width: 40px;height: 40px;background: white;position: absolute;left: -3%;margin-top: 2px;border-radius: 50%;}
 
-.carousel-caption .content-slide {
-    width: 90%;
+.carousel-caption .content-slide h2{
+    animation: title 1s;
 }
+.carousel-caption{
+    top:28%;
+    left: 10%;
+}
+.content-slide.text-left p{
+    animation: des 1s;
+}
+@keyframes des {
+    from {transform: translateX(-100px); opacity: 0;}
+    to {transform: translateX(0);opacity: 1;}
+  }
+@keyframes title {
+    from {transform: translateY(-100px); opacity: 0;}
+    to {transform: translateY(0);opacity: 1;}
+  }
 body{
     font-family: Montserrat-Light!important;
-    letter-spacing: 0.4px;
+   
 }
 .select-section input[type="radio"] {
     margin-right: 20px;
@@ -90,7 +106,7 @@ ul.nav.select-section.d-flex.flex-column a {
 }
 
 .form-group label {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -174,7 +190,7 @@ h2{
     font-size: 25px;
 }
 h3{
-    font-size: 20;
+    font-size: 20px;
 }
 h4{
     font-size: 14px;
@@ -197,12 +213,14 @@ h4{
     border-radius: 20px;
     padding-left: 44px;
 }
-
+.menu.fixed-top .container{
+    padding:0!important;
+}
 .left-menu .search {
     margin-top: 30px;
 }
 .content-slide h2{
-    font-size: 58px!important;
+    font-size: 58px;
     font-family: Montserrat-Bold;
 }
 @font-face {
@@ -240,11 +258,7 @@ header#header{
     position: relative;
 }
 .carousel-indicators{
-    bottom: 31px!important;
-}
-.carousel-caption.d-none.d-md-block{
-    top: 29%;
-    left: 9%;
+    bottom: 2%;
 }
 .carousel-indicators li{
     width: 15px!important;
@@ -254,10 +268,10 @@ header#header{
 }
 .scroll-to{
     position: absolute;
-    right: -62px;
+    right: -4%;
     top: 44%;
-    width: 200px;
-    height: 30px;
+    width: 13%;
+    height: 3%;
     color: white;
     border-bottom: 2px solid white;
     transform: rotate(90deg);
@@ -302,13 +316,35 @@ header#header{
 .tab-menu ul li{
     text-align: center;
     list-style: none;
-    padding: 20px 10px 20px 32px;
+    padding: 40px;
     border-bottom: 1px solid gray;
+    position: relative;
 }
+.tab-menu ul li a::after{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    content: "";
+    transition: 0.1s;
+    color:black;
+    background-color: white;
+    animation-name: showmenu;
+}
+    @keyframes showmenu{
+        form{
+            width:0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
 .tab-menu p{
     margin-bottom: 0;
 }
 .tab-menu ul li a{
+    font-size: 17px;
     transition: 0.4s;
     color: white;
 }
@@ -327,13 +363,15 @@ header#header{
     transition: 0.2s;
 }
 /* Css our story */
-
 .img-story {
-    height: 250px;
+    height: auto;
     width: 100%;
     border: 2px solid white;
     overflow: hidden;
-    margin-top: 24%;
+}
+.story-content p{
+    overflow: auto;
+    height: 80px;
 }
 .logo a{
     text-decoration: none;
@@ -479,4 +517,72 @@ p.slide img{
 }
 p.slide img:first{
     margin-left: 161px;
+}
+/* Reponsive code */
+
+/* Code mobile */
+@media (max-width: 575.98px) {
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 12px;
+    }
+    h4{
+        font-size: 10px;
+    }
+    p{
+        font-size: 10px!important;
+    }
+    .menu{
+        background:black;
+        border-bottom: 1px solid white;
+        
+    }
+    .logo{
+        transform: scale(0.7);
+        padding-top: 0!important;
+        
+    }
+    .logo img{
+        padding-top: 0!important;
+    }
+    .menu{
+        height: 64px!important;
+        line-height: 64px!important;
+     
+    }
+    header#header{
+        margin-top: 60px;
+    }
+    .menu-button{
+        margin-top: 13px!important;
+        padding-right:9px;
+        transform: scale(0.8);
+    }
+    .content-slide h2{
+        font-size: 20px;
+        padding-bottom: 0!important;
+    }
+    .content-slide P{
+        font-size: 10px;
+    }
+    .carousel-caption{
+        top:6%!important;
+        left: 8%;
+    }
+    .page-number{
+        font-size: 12px;
+    }
+    .story-content p{
+        padding-top: 5px!important;
+        margin-top: 0!important;
+        height: 50px;
+    }
 }
