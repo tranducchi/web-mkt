@@ -44,7 +44,7 @@ $( document ).ready(function() {
 $('.infor').click(function(){
   location.href = 'content.html';
 });
-var owl = $('.owl-carousel');
+var owl = $('.owl-carousel.owl-theme');
 owl.owlCarousel({
     loop:true,
     nav:true,
@@ -72,6 +72,12 @@ owl.on('mousewheel', '.owl-stage', function (e) {
     }
     e.preventDefault();
 });
+$('.customNextBtn').click(function() {
+    owl.trigger('next.owl.carousel');
+})
+$('.customPrevBtn').click(function() {
+    owl.trigger('prev.owl.carousel', [300]);
+})
 });
 // Click to div animate
 $(document).on('click', 'a[href^="#"]', function(e) {
