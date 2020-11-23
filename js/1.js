@@ -44,11 +44,12 @@ $( document ).ready(function() {
 $('.infor').click(function(){
   location.href = 'content.html';
 });
-var owl = $('.owl-carousel');
+var owl = $('.owl-carousel.owl-theme');
 owl.owlCarousel({
     loop:true,
     nav:true,
     margin:10,
+    navText: ["<img src='img/list-clints/pre-icon.png'>","<img src='img/list-clints/icon-next.png'>"],
     responsive:{
         0:{
             items:1
@@ -93,7 +94,23 @@ var pos = $id.offset().top;
 // animated top scrolling
 $('body, html').animate({scrollTop: pos});
 });
-
-
-            
-
+//p3 img 
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      navText: ["<img src='img/p3-pre.png'>","<img src='img/p3-next.png'>"],
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:2
+          }
+      }
+  })
+});
