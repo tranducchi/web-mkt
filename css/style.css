@@ -505,7 +505,8 @@ height: 44px;
   .clients-content p{
     
     padding-top: 4px;
-    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
   }
 .clients-content img{
     padding-bottom: 4px;
@@ -529,6 +530,10 @@ p.slide img{
 p.slide img:first{
     margin-left: 161px;
 }
+.clients-content .content-left img.setimg{
+    height: 40px;
+    width: 45px;
+    margin-left: 85px;}
 /* Reponsive code */
 
 /* Code mobile */
