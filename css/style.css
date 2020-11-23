@@ -531,6 +531,7 @@ p.slide img:first{
     margin-left: 161px;
 }
 .clients-content .content-left img.setimg{
+    margin-top: 88px;
     height: 40px;
     width: 45px;
     margin-left: 85px;}
@@ -601,4 +602,12 @@ p.slide img:first{
         margin-top: 0!important;
         height: 50px;
     }
+}
+.item{
+    width: 122px;
+    height: 164px;
+}
+.text-infor{
+    font-size: 20px;
+    text-align: center
 }
