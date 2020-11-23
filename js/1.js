@@ -57,10 +57,10 @@ owl.owlCarousel({
             items:3
         },            
         960:{
-            items:5
+            items:3
         },
         1200:{
-            items:6
+            items:3
         }
     }
 });
