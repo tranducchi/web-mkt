@@ -492,18 +492,22 @@ height: 44px;
 }
 #p3-content{
     position: absolute;
-    top: 62%;
-    left: 39%;
+    top: 61%;
+    left: 38.5%;
     width: 35%;
+    height: 30% ;
+}
+.p3-content-p.d-flex.justify-content-center{
+    color: white;
 }
 .btn.btn-outline-light.btn-send{
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 52%;
   border-radius: 21px;
 }
 .item.p3-img{
-  width: 80%;
+  width: 90%;
   height: 100%;
 }
 #p3-img-size{

@@ -105,8 +105,8 @@ $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
       loop:true,
       margin:10,
-      nav:true,
-      navText: ["<img src='img/p3-pre.png'>","<img src='img/p3-next.png'>"],
+      //nav:true,
+      //navText: ["<img src='img/p3-pre.png'>","<img src='img/p3-next.png'>"],
       responsive:{
           0:{
               items:1
