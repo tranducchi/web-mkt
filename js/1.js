@@ -49,10 +49,9 @@ owl.owlCarousel({
     loop:true,
     nav:true,
     margin:10,
-    navText: ["<img src='img/list-clints/pre-icon.png'>","<img src='img/list-clints/icon-next.png'>"],
     responsive:{
         0:{
-            items:1
+            items:3
         },
         600:{
             items:3
@@ -109,7 +108,7 @@ $(document).ready(function(){
       //navText: ["<img src='img/p3-pre.png'>","<img src='img/p3-next.png'>"],
       responsive:{
           0:{
-              items:1
+              items:2
           },
           600:{
               items:2

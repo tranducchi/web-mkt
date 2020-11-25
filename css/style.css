@@ -500,7 +500,7 @@ height: 44px;
 .p3-content-p.d-flex.justify-content-center{
     color: white;
 }
-.btn.btn-outline-light.btn-send{
+#human-of-the-door .btn.btn-outline-light.btn-send{
   position: absolute;
   top: 50%;
   left: 52%;
@@ -602,6 +602,9 @@ p.slide img:first{
     h4{
         font-size: 12px!important;
     }
+    a,label{
+        font-size: 10px!important;
+    }
     h4{
         font-size: 10px!important;
     }
@@ -633,6 +636,7 @@ p.slide img:first{
         margin-top: 13px!important;
         padding-right:9px;
         transform: scale(0.8);
+        margin-right: 22px;
     }
     .content-slide h2{
         font-size: 20px;
@@ -652,6 +656,31 @@ p.slide img:first{
         padding-top: 5px!important;
         margin-top: 0!important;
         height: 50px;
+    }
+    #p3-content{
+        top: 54%;
+        left: 25.5%;
+        width: 62%!important;
+        height: 30%;
+        transform: scale(0.7);
+    }
+    .clients-content{
+        top:-42%!important;
+        transform: scale(0.4);
+    }
+    .about-left h3{
+        margin-left: 34px;
+        font-size: 14px!important;
+    }
+    .selection{
+        margin-top:6%;
+    }
+    ul#tabs-nav li a.atab::before{
+        width: 20px;
+        height: 20px;
+    }
+    ul#tabs-nav li{
+        padding:10px;
     }
 }
 .item{
